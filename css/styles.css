@@ -369,6 +369,8 @@ img {
   margin-left: var(--set-gap);
   margin-top: var(--set-gap);
   cursor: pointer;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
 }
 
 .client-border {
@@ -391,7 +393,7 @@ img {
 .holder-svg-client:focus svg {
   fill: var(--akcent-color);
 }
-.client-border:hover {
+.client-item:hover {
   border: 1px solid var(--akcent-color);
 }
 .icon-clients {
