@@ -387,7 +387,7 @@ img {
   width: 166px;
   height: 92px;
 }
-.client-item :hover svg {
+.client-item:hover svg {
   fill: var(--akcent-color);
 }
 .holder-svg-client:focus svg {
