@@ -335,7 +335,7 @@ img {
   justify-content: center;
   width: 44px;
   height: 44px;
-  border-radius: 22px;
+  border-radius: 50%;
   fill: var(--icon-color);
 }
 .social-link:hover,
