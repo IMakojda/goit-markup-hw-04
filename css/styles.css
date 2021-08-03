@@ -245,6 +245,7 @@ img {
 .icon-hold {
   padding: 25px 100px;
   background: var(--background-section);
+  border-radius: 4px;
 }
 /* what do you do  */
 .we-do {
@@ -480,6 +481,7 @@ address p {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--text-title-color-btn-dark);
 }
 
 .filter-work-sign {
