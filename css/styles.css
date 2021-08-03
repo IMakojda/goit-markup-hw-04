@@ -467,15 +467,6 @@ address p {
   color: var(--text-hero-section-logo-light);
 }
 
-/* .filter-box-portfolio {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  color: var(--text-title-color-btn-dark);
-  cursor: pointer;
-} */
-
 .filter-box-portfolio button:focus,
 .filter-box-portfolio button:hover {
   color: var(--text-hero-section-logo-light);
