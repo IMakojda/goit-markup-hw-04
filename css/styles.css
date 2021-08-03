@@ -244,6 +244,7 @@ img {
 }
 .icon-hold {
   padding: 25px 100px;
+  background: var(--background-section);
 }
 /* what do you do  */
 .we-do {
@@ -313,23 +314,21 @@ img {
 }
 .caption-pictures {
   text-align: center;
+  padding: 30px 0;
 }
 .caption-pictures h3 {
-  margin-top: 30px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
-.caption-pictures p {
+.profession {
   margin-bottom: 16px;
-  margin-top: 10px;
 }
+
 .social-link-holder {
   display: flex;
-  width: 206px;
-  height: 44px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
 }
+
 .social-link {
   display: flex;
   align-items: center;
@@ -368,17 +367,12 @@ img {
   flex-basis: calc(100% / 6 - var(--set-gap));
   margin-left: var(--set-gap);
   margin-top: var(--set-gap);
-  cursor: pointer;
-  border: 1px solid var(--icon-color);
-  border-radius: 4px;
 }
 
 .client-border {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--icon-color);
-  border-radius: 4px;
 }
 .holder-svg-client {
   display: flex;
@@ -386,16 +380,20 @@ img {
   justify-content: center;
   width: 166px;
   height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
 }
-.client-item:hover svg {
+
+.holder-svg-client:focus svg,
+.holder-svg-client:hover svg {
   fill: var(--akcent-color);
 }
-.holder-svg-client:focus svg {
-  fill: var(--akcent-color);
-}
-.client-item:hover {
+.holder-svg-client:focus,
+.holder-svg-client:hover {
   border: 1px solid var(--akcent-color);
+  border-radius: 4px;
 }
+
 .icon-clients {
   fill: var(--icon-color);
 }
@@ -464,14 +462,20 @@ address p {
 }
 
 /* Portfolio Page*/
-.filter-box-portfolio button {
+.curent-btn {
+  background-color: var(--akcent-color);
+  color: var(--text-hero-section-logo-light);
+}
+
+/* .filter-box-portfolio {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   color: var(--text-title-color-btn-dark);
   cursor: pointer;
-}
+} */
+
 .filter-box-portfolio button:focus,
 .filter-box-portfolio button:hover {
   color: var(--text-hero-section-logo-light);
@@ -500,13 +504,20 @@ address p {
   align-items: center;
   margin-bottom: 50px;
 }
-.filter-btn {
+button {
+  font-family: inherit;
   background-color: #f5f4fa;
   padding: 6px 22px;
   border-radius: 4px;
   border: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--text-title-color-btn-dark);
+  cursor: pointer;
 }
-.filter-btn:not(:last-child) {
+button:not(:last-child) {
   margin-right: 8px;
 }
 /* main page style portfolio  */
@@ -523,23 +534,27 @@ address p {
   margin-left: var(--set-gap);
   margin-top: var(--set-gap);
 }
-.item-portfolio {
-  cursor: pointer;
-}
-.item-portfolio:hover {
+
+.card-poster:hover,
+.card-poster:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .card-poster {
+  display: block;
   border: 1px solid #eeeeee;
 }
+
 .card-contetnt {
   text-align: start;
   padding: 20px 24px;
 }
+
 .card-contetnt p {
   margin: 0;
 }
+
 .card-contetnt h2 {
   margin-bottom: 4px;
 }
